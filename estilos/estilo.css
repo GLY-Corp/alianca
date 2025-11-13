@@ -14,18 +14,18 @@ body {
 
 header {
     background-color: rgb(0, 26, 59);
-    padding: 20px;
+    padding: 5px 150px;
 }
 
 .container-header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-right: 150px;
+    /*margin-right: 150px;*/
 }
 
 header img {
-    margin-left: 100px;
+    /*margin-left: 100px;*/
     width: 200px;
 }
 
@@ -35,7 +35,7 @@ header img {
     list-style: none;
 }
 
-.menu li a {
+.menu ul li a {
     color: white;
     text-decoration: none;
 }
