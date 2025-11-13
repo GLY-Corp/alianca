@@ -21,11 +21,9 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    /*margin-right: 150px;*/
 }
 
 header img {
-    /*margin-left: 100px;*/
     width: 200px;
 }
 
