@@ -13,14 +13,11 @@ body {
 }
 
 header {
-    align-items: center;
     display: flex;
-    gap: 20px;
     justify-content: center;
-    padding: 20px;
 }
 
 .logo {
     border-radius: 50px;
-    width: 170px;
+    width: 150px;
 }
