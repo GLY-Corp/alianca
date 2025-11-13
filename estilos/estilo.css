@@ -1,3 +1,8 @@
+/*
+rgb(0, 26, 59) AZUL
+rgb(253, 50, 45) VERMELHO
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -8,5 +13,14 @@ body {
 }
 
 header {
-    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    border-radius: 50px;
+    width: 170px;
 }
