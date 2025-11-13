@@ -16,6 +16,23 @@ header {
     padding: 20px;
 }
 
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
 header img {
     width: 200px;
+}
+
+.menu ul {
+    display: flex;
+    
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
 }
