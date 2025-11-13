@@ -8,6 +8,7 @@ rgb(253, 50, 45) VERMELHO
 }
 
 body {
+    background-color: black; /* Escuro apenas para ficar mais confortável para programar */
     margin: 0;
 }
 
@@ -22,6 +23,7 @@ header {
 }
 
 header img {
+    margin-left: 80px;
     width: 200px;
 }
 
