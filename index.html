@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"> <!-- Alterar o favicon de quadrado para redondo -->
 </head>
 <body>
+
     <header>
         <div class="container-header">
             <img src="imagens/logo1.png" alt="Logo Ferragem Aliança">
@@ -20,6 +21,12 @@
                     <li><a href="#">Fale Conosco</a></li>
                 </ul>
             </nav>
+                <!-- Botão hambúrguer -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
@@ -93,5 +100,12 @@
             <p>© 2025 Aliança Casa & Construção – Desenvolvido por GLY Corporation</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('active');
+            document.querySelector('.hamburguer').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

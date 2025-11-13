@@ -51,6 +51,22 @@ header img {
     text-decoration: none;
 }
 
+/* Ícone do hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #333;
+    border-radius: 3px;
+    transition: .3s;
+}
+
 .hero {
     background: url('../imagens/fachada.jpg') no-repeat center/cover;
     height: 650px;
@@ -203,5 +219,170 @@ footer {
 }
 
 .footer-copy p {
-    margin
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+   =========================== */
+
+/* ---- TELAS MÉDIAS (tablets 1024px até 768px) ---- */
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    .menu ul {
+        gap: 40px;
+    }
+
+    .hero-content {
+        margin-left: 40px;
+        max-width: 500px;
+    }
+
+    .categorias {
+        padding: 60px 40px;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .footer-container {
+        padding: 0 40px;
+    }
+}
+
+/* ---- TELAS PEQUENAS (celulares grandes e tablets pequenos < 768px) ---- */
+@media (max-width: 768px) {
+    header img {
+        width: 150px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Animação de X */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .hero {
+        height: 500px;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .categories h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .footer-col {
+        width: 45%;
+    }
+}
+
+/* ---- CELULARES PEQUENOS (até 480px) ---- */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .container-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 420px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .btn-hero {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .categorias {
+        padding: 40px 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-logo {
+        margin: 0 auto 15px;
+    }
 }
