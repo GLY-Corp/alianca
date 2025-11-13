@@ -18,19 +18,20 @@ header {
 }
 
 .container-header {
-    display: flex;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
 }
 
 header img {
-    margin-left: 80px;
+    margin-left: 100px;
     width: 200px;
 }
 
 .menu ul {
     display: flex;
-    
-    gap: 30px;
+    gap: 150px;
     list-style: none;
 }
 
